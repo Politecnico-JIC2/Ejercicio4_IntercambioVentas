@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ListaVentas"/>
+  <xs:complexType name="Ventas">
+    <xs:sequence>
+      <xs:element name="Importe">
+        <xs:simpleType>
+          <xs:restriction base="xs:decimal">
+            <xs:enumeration value="50000"/>
+            <xs:enumeration value="120000"/>
+            <xs:enumeration value="4000"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Comprador">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Martina Muñoz Castro"/>
+            <xs:enumeration value="Arturo Agudelo Correa"/>
+            <xs:enumeration value="Bernardo Cano López"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Vendedor">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Carmen Rios Restrepo"/>
+            <xs:enumeration value="Edgar Otalvaro Paredes"/>
+            <xs:enumeration value="Santiago Casas Herrera"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Fecha" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:date">
+            <xs:enumeration value="04-09-2018"/>
+            <xs:enumeration value="02-09-2008"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="CodigoDeFactura">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="CoveF01"/>
+            <xs:enumeration value="CoveF02"/>
+            <xs:enumeration value="CoveF03"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ListaVentas">
+    <xs:sequence>
+      <xs:element type="Ventas" name="Ventas" maxOccurs="unbounded" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
