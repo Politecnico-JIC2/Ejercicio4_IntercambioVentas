@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ListaVentas SYSTEM "Intercambioventas.dtd">
-<ListaVentas>
+<ListaVentas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="Intercambioventas.xsd">
     <Ventas>
         <Importe>50000</Importe>
         <Comprador>Martina Muñoz Castro</Comprador>
         <Vendedor>Carmen Rios Restrepo</Vendedor>
-        <Fecha>04-09-2018</Fecha>
+        <Fecha>2018-03-09</Fecha>
         <CodigoDeFactura>CoveF01</CodigoDeFactura>
     </Ventas>
     <Ventas>
         <Importe>120000</Importe>
         <Comprador>Arturo Agudelo Correa</Comprador>
         <Vendedor>Edgar Otalvaro Paredes</Vendedor>
-        <Fecha>02-09-2008</Fecha>
+        <Fecha>2005-11-08</Fecha>
         <CodigoDeFactura>CoveF02</CodigoDeFactura>
     </Ventas>
     <Ventas>
