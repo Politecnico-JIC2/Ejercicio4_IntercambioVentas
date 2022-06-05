@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ListaVentas SYSTEM "Intercambioventas.dtd">
+<ListaVentas>
+    <Ventas>
+        <Importe>50000</Importe>
+        <Comprador>Martina Muñoz Castro</Comprador>
+        <Vendedor>Carmen Rios Restrepo</Vendedor>
+        <Fecha>04-09-2018</Fecha>
+        <CodigoDeFactura>CoveF01</CodigoDeFactura>
+    </Ventas>
+    <Ventas>
+        <Importe>120000</Importe>
+        <Comprador>Arturo Agudelo Correa</Comprador>
+        <Vendedor>Edgar Otalvaro Paredes</Vendedor>
+        <Fecha>02-09-2008</Fecha>
+        <CodigoDeFactura>CoveF02</CodigoDeFactura>
+    </Ventas>
+    <Ventas>
+        <Importe>4000</Importe>
+        <Comprador>Bernardo Cano López</Comprador>
+        <Vendedor>Santiago Casas Herrera</Vendedor>
+        <CodigoDeFactura>CoveF03</CodigoDeFactura>
+    </Ventas>
+
+</ListaVentas>
